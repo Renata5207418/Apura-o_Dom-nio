@@ -76,10 +76,6 @@ CAMINHO_EXECUTAVEL = r"C:\Caminho\para\dominio.exe"
 python app.py
 ```
 
-Acesse o sistema em: [http://localhost:5000](http://localhost:5000)
-
----
-
 ## **Como Usar**  
 
 ### **1. Tela Inicial**  
@@ -160,8 +156,6 @@ pip freeze > requirements.txt
 
 - **Monitorar Progresso via API:**  
   ```bash
-  curl http://localhost:5000/progresso
-  ```
 
 ---
 
@@ -191,4 +185,3 @@ Contribuições são bem-vindas!
 Este projeto é distribuído sob a licença **MIT**. Consulte o arquivo **LICENSE** para mais detalhes.  
 
 ---
-sar! 🙌
