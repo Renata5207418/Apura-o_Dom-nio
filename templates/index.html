@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuração Domínio</title>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="/static/css/index.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Formulário Principal -->
+        <div class="container">
+            <img src="/static/images/logo.png" alt="Logo" class="logo">
+            <h1>Apuração Empresas Domínio</h1>
+
+            <!-- Formulário -->
+            <form id="unified-form" enctype="multipart/form-data">
+                <label for="usuario">Usuário Domínio:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha Domínio:</label>
+                <div style="position: relative;">
+                    <input type="password" id="senha" name="senha" required style="padding-right: 30px;">
+                    <span class="toggle-password" onclick="togglePassword()">
+                        <i class="fas fa-eye-slash"></i>
+                    </span>
+                </div>
+
+                <label for="arquivo_empresas">Upload da Planilha:</label>
+                <input type="file" id="arquivo_empresas" name="arquivo_empresas" accept=".xlsx" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Progresso -->
+        <div class="apuradas-container">
+            <h2>Progresso</h2>
+            <div id="progress-container" class="progress-messages"></div>
+        </div>
+    </div>
+
+    <!-- JS Externo -->
+    <script src="/static/js/index.js"></script>
+</body>
+</html>
